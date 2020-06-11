@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Type Game</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Test your Speed!</h1>
+        <div class="wrapper">
+            <p>Time : <span id="timer">10</span></p>
+            <h3 id="words"></h3>
+            <p>Score : <span id="score">0</span></p>
+        </div>
+        <div class="display">
+            <div class="form">
+                <form>
+                    <input type="text" id="typing" placeholder="Type here" autocomplete="off">
+                </form>
+            </div>
+            <div class="score">
+                <h2>Total Score : <span id="showScore"></span></h2>
+            </div>
+
+            <div class="btn">
+                <button id="start">Start</button>
+            </div>
+                
+        </div>
+        <button class="play-again" id="play-again">Play Again</button>
+    </div>
+
+    <div class="options">
+        <select id="options">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+    </div>
+    
+
+<script src="main.js"></script>
+</body>
+</html>

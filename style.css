@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+.container{
+    background-color: rgb(161, 163, 165);
+    padding: 50px 30px;
+    width: 65%;
+}
+.container h1{
+    text-align: center;
+    font-size: 32px;
+    border-bottom: 2px solid wheat;
+    padding-bottom: 20px;
+}
+.container .wrapper{
+    margin-top: 30px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .wrapper h3{
+    font-size: 25px;
+}
+.container span,p{
+    font-size: 18px;
+}
+.container .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+.display .form {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    display: none;
+}
+.form form input{
+    width: 70%;
+    margin: auto;
+    padding: 3px 10px;
+    font-size:23px;
+    outline: none;
+}
+.container .btn{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.container .btn button{
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    width: 80%;
+    background-color: #121212;
+    color: white;
+}
+
+button.hide{
+    display: none;
+}
+.form.show{
+    display: block;
+}
+
+
+.wrapper.close{
+    display: none;
+}
+.form.close{
+    display: none;
+}
+.score{
+    display: none;
+
+}
+.score.show{
+    display: block;
+}
+.score h2{
+    font-size: 35px;
+    color: rgb(18, 94, 18);
+}
+#showScore{
+    font-size: 35px;
+}
+.play-again{
+    display: none;
+    font-size: 25px;
+    padding: 5px;
+    width: 80%;
+    background-color: cyan;
+    margin: auto;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.play-again.show{
+    display: block;
+}
+#timer{
+    color: rgb(177, 17, 17);
+}
+#score{
+    color: darkgreen;
+}
+.options{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    outline: none;
+}
+.options select{
+    outline: none;
+    font-size: 18px;
+    
+    /* text-align: center; */
+}
