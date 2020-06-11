@@ -19,9 +19,6 @@ function playAgain(){
     endScreen.classList.add('show');
     showScore.innerHTML = score;
     typing.value = '';
-    document.getElementById('score').innerHTML = 0;
-    score = 0;
-    timer = 11;
 }
 
 
@@ -36,12 +33,14 @@ function startGame(){
     typing .focus();
     displayWords();
     let start = setInterval(updateTime,1000);
-
-
     function updateTime(){
-        timer--
+        timer--;
         document.getElementById('timer').innerHTML = timer;
         if(timer === 0){
+            setTimeout(start);
+            document.getElementById('score').innerHTML = 0;
+            document.getElementById('timer').innerHTML = 10;
+            timer = 10;
             playAgain();
         }
     }
@@ -71,7 +70,7 @@ function checkInput(e){
 startBtn.addEventListener('click',startGame)
 typing.addEventListener('input',checkInput);
 form.addEventListener('submit',(e)=>{e.preventDefault()});
-again.addEventListener('click',startGame);
+again.addEventListener('click',()=>location.reload());
 options.addEventListener('change',(e)=>{
     if(e.target.value === 'medium'){
         difficulty = 5;
